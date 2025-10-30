@@ -26,43 +26,6 @@ LangChain + ChromaDB (Knowledge Retrieval)
      ⬇️
 OpenAI API (Response Generation)
 
-📂 Folder Structure
-customer-support-chatbot/
-│
-├── app.py                  # Main FastAPI backend
-├── chatbot_interface.py    # Gradio frontend script
-├── requirements.txt        # Required dependencies
-├── kb/
-│   └── faqs.csv            # Knowledge base with FAQs
-└── README.md               # Project documentation
-
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/your-username/customer-support-chatbot.git
-cd customer-support-chatbot
-
-2️⃣ Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # for Mac/Linux
-venv\Scripts\activate      # for Windows
-
-3️⃣ Install dependencies
-pip install -r requirements.txt
-
-4️⃣ Add your OpenAI API key
-
-Create a .env file in the project root:
-
-OPENAI_API_KEY=your_api_key_here
-
-5️⃣ Run the FastAPI backend
-uvicorn app:app --reload
-
-6️⃣ Launch the Gradio frontend
-python chatbot_interface.py
-
-
-The chatbot will open in your default browser. 🎉
 
 🧠 Example FAQs (faqs.csv)
 title,content
